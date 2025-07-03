@@ -70,7 +70,7 @@ public class 실습2 {
         System.out.println( pro == '네' ? "true" : "false");
         System.out.println("이름 :"+name+"\n나이 :"+age3+"\n키 :"+키+"\n프로여부 :"+pro);
 
-         */
+
         Scanner bnc = new Scanner( System.in );
         System.out.println("이름 : ");
         String name = bnc.next();
@@ -83,22 +83,11 @@ public class 실습2 {
         boolean pro = proInput.equals("네");
         System.out.println(pro ? "true" : "false");
         System.out.println("이름 :"+name+"\n나이 :"+age3+"살"+"\n키 :"+키+"cm"+"\n프로여부 :"+pro);
-
+*/
     /*
 
-    문제 7: Scanner를 사용하여 아래 4가지 정보를 순서대로 입력받아 출력하는 코드를 작성하시오.
-                이름 (String), 나이 (int), 키 (double), 프로그래머 여부 (boolean)
-                입력 예시:
-        이름: 김자바
-        나이: 25
-        키: 165.8
-        프로그래머입니까? (true/false): true
-        출력 예시:
-        --- 자기소개 ---
-                이름: 김자바
-        나이: 25
-        키: 165.8cm
-        프로그래머 여부: true
+
+
 
 
        [실습2] *제출용
