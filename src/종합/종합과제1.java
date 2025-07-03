@@ -11,7 +11,7 @@ public class 종합과제1 { // class 시작
         int count1 = 0;
         int count2 = 0;
         int count3 = 0;
-
+//aaa
         for (; ; ) { // 무한 시작
             System.out.println("=========== 맛집 대기 시스템 ===========");
             System.out.println("  1.대기 등록 | 2.대기 현황");
