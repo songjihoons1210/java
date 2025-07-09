@@ -20,9 +20,21 @@ public class 실습8 {
         Checker checker = new Checker();
         checker.dda( 2, 1);
         //5
-        System.out.print(" 입력 : ");
-
+        Scanner sc = new Scanner(System.in);
         Lamp lamp = new Lamp();
+        System.out.print(" 입력(on/off) : ");
+        String str = sc.nextLine();
+        lamp.turnOn(str);
+        //7
+        Visualizer visualizer = new Visualizer();
+        String asd = visualizer.getStars(5);
+        System.out.println(asd);
+        //8
+        ParkingLot abcd = new ParkingLot();
+        int a = abcd.calculateFee(65);
+        int aa = abcd.calculateFee(140);
+        System.out.println(a);
+        System.out.println(aa);
 
 
 
@@ -59,6 +71,7 @@ public class 실습8 {
 [문제 7] Visualizer 클래스를 만드세요.
 1. 정수 하나를 매개변수로 받아, 그 숫자만큼 "★" 문자를 반복하여 하나의 문자열로 만들어 반환하는 getStars 메소드를 정의하세요.
 2. main 함수에서 getStars(5)를 호출하여 반환된 문자열 "★★★★★"를 출력하세요.
+
 
 [문제 8] ParkingLot 클래스를 만드세요.
 1. 주차 시간(분)을 매개변수로 받아, 요금 규정에 따라 계산된 최종 주차 요금을 반환하는 calculateFee 메소드를 정의하세요.

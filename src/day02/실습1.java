@@ -9,7 +9,8 @@ public class 실습1 {
         [실습1] * 제출용
         문제 1: 리터럴(Literal)과 기본 출력 함수
         지시: System.out.println() 함수를 사용해서 숫자 25와 문자열 "홍길동"을 각각 다른 줄에 출력 하시오.
-    *//*
+    */
+        /*
         int 숫자 = 25;
         System.out.println("숫자 출력 : "+숫자 );
         String 이름 = "홍길동";

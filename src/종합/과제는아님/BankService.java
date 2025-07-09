@@ -51,14 +51,14 @@ public class BankService {
             } else if (choice == 4) {
                 System.out.println("--- 잔고 확인 ---");
                 Account[] accounts = BS.doget();  // 이따 아래 반복문 돌려야 저장 되어 출력 가능하니까 잘하자
-                for (int index = 0; index <= accounts.length-1 ; index++) {
-                System.out.print("계좌번호 : ");
-                String bankaccount = sc.next();
-                System.out.print("비밀번호 : ");
-                int password = sc.nextInt();
+                for (int index = 0; index <= accounts.length - 1; index++) {
+                    System.out.print("계좌번호 : ");
+                    String bankaccount = sc.next();
+                    System.out.print("비밀번호 : ");
+                    int password = sc.nextInt();
                     System.out.println("[잔고]");
                 }
-
+            }
             } // f end
         } // m end
     } // c end

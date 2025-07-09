@@ -10,14 +10,14 @@ public class BankController {
         account.password = password;
         account.deposit = deposit;
 
-        for (int i = 0; i < accounts.length; i++) {
-            if (accounts[i] == null) {
-                accounts[i] = account;
-                return true;
+        for (int i = 0; i < accounts.length; i++) { // 계좌 지정하려고
+            if (accounts[i] == null) { // 계좌의 자리가 남을때
+                accounts[i] = account; // 계좌 추가
+                return true; // 저장 성공 반환
             }
 
         }
-        return false;
+        return false; // 저장 실패 반환
     }
-    Account[] doget() { return accounts; }
+    Account[] doget() { return accounts;} //모든 계좌를 반환 메소드
 }
