@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class 실습9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        /*
         //1
         Book bk = new Book("자바","용권이", 30000);
         Book bk2 = new Book("자바2","용권이2", 320000);
@@ -33,8 +34,88 @@ public class 실습9 {
             int amount2 = sc.nextInt();
             ba.withdraw(amount2);
             System.out.println();
+            System.out.println("계속 할거임? y/n");
+            String yn = sc.next();
+            if (yn.equals("n")) {
+                break;
+            }
+
         }
         //5
+
+        Goods gs = new Goods("코올라" ,2000);
+        System.out.println(gs.name +"\n"+ gs.price);
+        Goods gs2 = new Goods("코오올라" , 20003);
+        System.out.println("이름 :"+gs2.name +"\n가격 :"+gs2.price);
+*/
+        //6
+        /*
+        for (; ; ) {
+            System.out.print("dd 입력 : ");
+            String dd = sc.next();
+            boolean isLogin = "guest".equals(dd);
+            Member mb = new Member(dd, isLogin);
+            if (mb.isLogin) {
+                System.out.println("종료한다 ");
+                break;
+            } else {
+                System.out.println("계쏙함");
+            }
+
+        }
+         */
+        /*
+        Member mb = new Member();       << 요구사항에 맞게 썻습니다.
+        System.out.println("id :"+mb.id);
+        System.out.println("id :"+mb.isLogin);
+        */
+        System.out.print("id(guest) : ");
+        String idd = sc.nextLine();
+        Member mb = new  Member(idd,true);
+        // gpt 참고 클래스 위치 바꾸면
+        // String에 사용 가능한것을 알게 되어 사용 했습니다.
+        System.out.println("id 입력 "+mb.id);
+        System.out.println("여부 "+mb.isLogin);
+        System.out.println("----------");
+        //7
+
+        Television tv = new Television(7 , 20);
+        System.out.println("채널 :"+tv.channel);
+        System.out.println("볼륨 :"+tv.volume);
+        System.out.println("----------");
+
+        //8
+
+        Player player1 = new Player("손흥민",90,85);
+        Player player2 = new Player("이강인",85,92);
+        System.out.println("이름 :"+player1.name+"\tpower :"+player1.power+"\t speed :"+player1.speed);
+        System.out.println("이름 :"+player2.name+"\tpower :"+player2.power+"\t speed :"+player2.speed);
+        System.out.println("----------");
+
+        //9
+
+        System.out.print("메뉴 입력 : ");
+        String na =  sc.nextLine();
+        boolean asd = "김치찌개".equals(na);
+        MenuItem mi = new MenuItem("김치찌개", 8000 , asd);
+        if (asd){
+            System.out.printf("[대표메뉴] %s , 가격 : %d",mi.name ,mi.price);
+        }else {
+            System.out.println("잘못입력하셨습니다.");
+        }
+
+        //10
+        System.out.println("이름 : ");
+        String name =  sc.next();
+        System.out.println("나이 : ");
+        int age =  sc.nextInt();
+        System.out.println("MBTI : ");
+        String mbti =  sc.next();
+        UserProfile up = new UserProfile(name,age,mbti);
+        System.out.println("이름 : ");
+    }
+
+}
 
         /*
 [문제 1] Book 클래스를 만드세요. (title, author, price 멤버 변수) *멤버변수의 타입은 적절하게 선택하시오.
@@ -84,5 +165,3 @@ public class 실습9 {
 3. 입력받은 값들을 사용하여 UserProfile 객체를 생성하고, 저장된 모든 정보를 출력하세요.
 
      */
-    }
-}
