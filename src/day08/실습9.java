@@ -47,10 +47,10 @@ public class 실습9 {
         System.out.println(gs.name +"\n"+ gs.price);
         Goods gs2 = new Goods("코오올라" , 20003);
         System.out.println("이름 :"+gs2.name +"\n가격 :"+gs2.price);
-*/
+
         //6
-        /*
-        for (; ; ) {
+
+        for (; ; ) { // 무한
             System.out.print("dd 입력 : ");
             String dd = sc.next();
             boolean isLogin = "guest".equals(dd);
@@ -63,20 +63,24 @@ public class 실습9 {
             }
 
         }
-         */
-        /*
-        Member mb = new Member();       << 요구사항에 맞게 썻습니다.
-        System.out.println("id :"+mb.id);
-        System.out.println("id :"+mb.isLogin);
-        */
         System.out.print("id(guest) : ");
         String idd = sc.nextLine();
         Member mb = new  Member(idd,true);
-        // gpt 참고 클래스 위치 바꾸면
+        // [gpt]참고 클래스 위치 바꾸면
         // String에 사용 가능한것을 알게 되어 사용 했습니다.
         System.out.println("id 입력 "+mb.id);
-        System.out.println("여부 "+mb.isLogin);
+        System.out.println("여부 "+mb.isLogin); // t / f 여부
         System.out.println("----------");
+         */
+        Member mb = new Member();
+        System.out.println("id :"+mb.id);
+        System.out.println("id :"+mb.isLogin);
+
+          // 관례적/주문
+                // -> 서로다른 타입 혹은 서로 다른 의므를 같는 자료 또는 존재하지 않는 타입은 클래스
+                    // 예]
+
+
         //7
 
         Television tv = new Television(7 , 20);
@@ -88,7 +92,7 @@ public class 실습9 {
 
         Player player1 = new Player("손흥민",90,85);
         Player player2 = new Player("이강인",85,92);
-        System.out.println("이름 :"+player1.name+"\tpower :"+player1.power+"\t speed :"+player1.speed);
+        System.out.println("이름 :"+player1.name+"\tpower :"+player1.power+"\t speed :"+player1.speed); // 이름 '손흥민' 파워 '90' 스피드 '85'
         System.out.println("이름 :"+player2.name+"\tpower :"+player2.power+"\t speed :"+player2.speed);
         System.out.println("----------");
 
@@ -103,16 +107,17 @@ public class 실습9 {
         }else {
             System.out.println("잘못입력하셨습니다.");
         }
+        System.out.println("-----------");
 
         //10
-        System.out.println("이름 : ");
-        String name =  sc.next();
-        System.out.println("나이 : ");
-        int age =  sc.nextInt();
-        System.out.println("MBTI : ");
-        String mbti =  sc.next();
-        UserProfile up = new UserProfile(name,age,mbti);
-        System.out.println("이름 : ");
+        System.out.print("이름 : ");
+        String name =  sc.next();// 이름 문자열
+        System.out.print("나이 : ");
+        int age =  sc.nextInt(); // 나이 정수
+        System.out.print("MBTI : ");
+        String mbti =  sc.next(); // 문자열 mbti
+        UserProfile up = new UserProfile(name,age,mbti); // 받은값을 호출
+        System.out.printf("이름 : %s ,\t 나이 : %d , \t MBTI : %s", up.name, up.age, up.mbti);
     }
 
 }

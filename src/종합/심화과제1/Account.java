@@ -1,4 +1,4 @@
-package 종합.과제는아님;
+package 종합.심화과제1;
 
 
 public class Account {

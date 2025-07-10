@@ -30,9 +30,9 @@ public class 실습8 {
         String asd = visualizer.getStars(5);
         System.out.println(asd);
         //8
-        ParkingLot abcd = new ParkingLot();
-        int a = abcd.calculateFee(65);
-        int aa = abcd.calculateFee(140);
+        ParkingLot abcd = new ParkingLot(); //불러와 객체 만들기
+        int a = abcd.calculateFee(65); //
+        int aa = abcd.calculateFee(140); //
         System.out.println(a);
         System.out.println(aa);
 
