@@ -29,7 +29,7 @@ public class WaitingService {
                 Waiting[] waitings = WaitingController.getdo(); // WaitingController에 만들었던 getdo 호출하여 사용 set/저장 , 이건 get/호출 or 반환
                 for ( int i = 0 ; i < waitings.length ; i++ ) {
                     if (waitings[i] != null){
-                        System.out.println("순서: "+ i + 1 +"\t 연락처 :"+waitings[i].getPhone()+"\t인원: "+waitings[i].getCount());
+                        System.out.println("순서: " + (i + 1) +"\t 연락처 :"+waitings[i].getPhone()+"\t인원: "+waitings[i].getCount());
                         // 순서 i로 할경우 인덱스0부터 시작하니 i+1 해줘서 1부터 시작 ,
                     }
                 }

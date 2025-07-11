@@ -24,8 +24,8 @@ public class 실습10 {
         TicketMachine machine2 = new TicketMachine();
         TicketMachine machine3 = new TicketMachine();
         machine1.issueTicket();
-        machine1.issueTicket();
         machine2.issueTicket();
+        machine3.issueTicket();
         TicketMachine.printTotalTickets();
         //6
 

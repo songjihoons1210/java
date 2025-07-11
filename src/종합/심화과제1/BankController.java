@@ -1,6 +1,8 @@
+
 package 종합.심화과제1;
 
 public class BankController {
+    /*
     int deposit = 0;
     Account[] accounts = new Account[100];
 
@@ -13,7 +15,7 @@ public class BankController {
     boolean dodo2(String bankaccount, int password, int deposit) {
         Account account = new Account();
         for (int i = 0; i < accounts.length; i++) {
-            Account accounts = accounts[i];
+            Account accounts = account[i];
         if (accounts.bankaccount == bankaccount && accounts.password == password) {
             account.deposit += deposit;
         }
@@ -33,4 +35,6 @@ public class BankController {
     }
 
     Account[] doget() { return accounts;} //모든 계좌를 반환 메소드
+
+     */
 }

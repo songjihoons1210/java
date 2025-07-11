@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankService {
     public static void main(String[] args) {
-
+    /*
         // 객체 만
         Scanner sc = new Scanner(System.in);
         //
@@ -60,6 +60,9 @@ public class BankService {
                 }
             }
             } // f end
-        } // m end
+    */
+       } // m end
+
+
     } // c end
 
