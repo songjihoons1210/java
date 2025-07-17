@@ -44,5 +44,37 @@ public class Exaple2 {
         // (5) E클래스로 객체 생성시 총 객채수 : 4개
         System.out.println("[5]------");
         E e = new E();  // E , C , A , Object
+
+        // (6) 자동타입 변환
+        A a1 = b; // b객체(값)는 B타입
+        Object o1 = b; // b객체(값)는 Object타입 변환 가능
+        // B b2 = c;   // c 객체는 처음만들어 질때 부모가 A이다. 그러므로 오류발생
+
+        // (7) 강제타입변환
+        B b2 = (B)a1;   // ㅇㅇ a1태생 확인
+
+        A a2 = e;       // 자동
+        C c1 = (C)a2;  // 강제       |         C c1 = a2; 이건 불가능 올라가는건 가능한데 내려오는건 불가능
+
+        // B b3 = (B)a2;  // 강제  불가능
+        // 문법오류가 아닌 실행 오류 발생
+
+        // (8) 인스턴스(객체/값) 타입 확인 방법
+        // instance of 내느낌  아래 기준으로 치면 a2는 C에 있어?
+        // 객체 instance of 타입/클래스명 : 객체가 지정한 클래스 타입 확인
+        // instance of 키워드 사용
+        System.out.println( a instanceof Object ); // true
+        System.out.println( b instanceof A );  // true
+        // System.out.println( e instanceof B); // false 오류발생 왜 e는 B가 아니라 C 이기 때문에 false 이다
+        System.out.println( e instanceof C); // true // 위랑 다르게 e 는 C가 부모이기 때문에 true 이다
+        System.out.println( a2 instanceof C ); // true
+        System.out.println( a2 instanceof B ); // false
+
+        // (9) 상속 활용처
+        // 1. 웹/앱 라이브러리
+        // 2. 클래스 설계
+        //      코드치다가 명령어(코드)가 중복되면 메소드화
+        //      클래스정의하다가 다른클래스와 멤버변수 중복되면 상속화
+
     }
 }
