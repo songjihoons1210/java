@@ -1,5 +1,5 @@
 package 종합.예제7;
-
+/*
 import 종합.예제6.Board;
 import 종합.예제7.controller.BoardController;
 import 종합.예제7.view.BoardView;
@@ -25,3 +25,4 @@ public class AppStart {
 
     }
 }
+*/

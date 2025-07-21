@@ -1,7 +1,60 @@
 package day14.실습12;
+// 1
+class Person {
+    String name;
+}
+class Student extends Person {
+    int studentId;
+}
+
+// 2
+class Animal {
+    void makeSound(){
+        System.out.println("동물 소리");
+    }
+}
+class Cat extends Animal {
+    void makeSound(){
+        System.out.println("야아옹");
+    }
+}
+// 3
+class Machine {
+     Machine(){
+        System.out.println("부모임 클래스 생성자 실행");
+    }
+}
+class Computer extends Machine {
+    Computer(){
+        System.out.println("자식 클래스 생성자 실행");
+    }
+
+}
 
 public class 실습12 {
+    public static void main(String[] args) {
+        // 1
+        Person p1 = new Person();
+        Student s1 = new Student();
+        p1.name = "지훈";
+        s1.studentId = 5;
+        System.out.println(p1.name);
+        System.out.println(s1.studentId);
 
+        // 2
+        Animal a1 = new Cat();
+        a1.makeSound();
+        System.out.println(a1);
+        Cat cat = new Cat();
+        cat.makeSound();
+        System.out.println(cat);
+
+
+        // 3
+        Computer computer = new Computer();
+        System.out.println(computer);
+    }
+}
 
     /*
     [JAVA] 실습12 : 클래스의 상속
@@ -61,4 +114,3 @@ public class 실습12 {
 3. Electronic을 상속받는 Laptop 클래스를 만드세요.
 4. main 함수에서 Laptop 객체를 생성한 뒤, 이 객체가 Electronic 타입과 Device 타입으로도 형 변환이 가능한지 instanceof 연산자로 확인하고 결과를 출력하세요.
      */
-}
