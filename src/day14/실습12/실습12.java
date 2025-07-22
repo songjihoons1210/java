@@ -53,6 +53,9 @@ public class 실습12 {
         // 3
         Computer computer = new Computer();
         System.out.println(computer);
+
+        // 4
+
     }
 }
 

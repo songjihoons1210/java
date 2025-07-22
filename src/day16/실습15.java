@@ -6,8 +6,34 @@ import java.util.Scanner;
 
 public class 실습15 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
+        // * 파일처리 목적 : (저장) 자바 외 저장소로 영구저장 가능하다.
+        // 문제1 : (출력 : 자바 --> 파일 )
+        // (1) 파일의 경로 지정
+        String path = " src/diary.txt";
+        try{    // try { 예외가 발생할것 같은 또는 일반예외 }
+            // (2) 출력 객체 생성 , 일반 예외 발생 , try ~ catch
+        FileOutputStream fout = new FileOutputStream((path);
+        // (3) 출력할 내용
+            String str = "오늘 날씨는 맑았다. 자바 공부는 재미있다.";
+        // (4) 출력할 내용 -> 바이트 배열 반환 ?? 스트림(데이터 이동경로-바이트단위)
+        byte[] outBytes = str.getBytes();
+        // (5) 바이트 내보내기 , 일반 예외 발생 , try ~ catch
+            fout.write( outBytes ); // write 오류뜨는 이유 catch 두번째 IOE 필요
+        }catch (FileNotFoundException e ) { // catch( 예외클래스명 변수명 ) { 예외일떄 코드; }
+            System.out.println("예외발생");
+        }catch (IOException e) {
+            System.out.println("예외발생");
+        }
+
+    }
+
+
+
+
+
+
+        Scanner sc = new Scanner(System.in);
         // 1
         try {
             String path = "./src/day16/diary.txt";
