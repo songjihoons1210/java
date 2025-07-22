@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class 실습15 {
     public static void main(String[] args) {
-
+        /*
         // * 파일처리 목적 : (저장) 자바 외 저장소로 영구저장 가능하다.
         // 문제1 : (출력 : 자바 --> 파일 )
         // (1) 파일의 경로 지정
@@ -26,9 +26,47 @@ public class 실습15 {
             System.out.println("예외발생");
         }
 
+        // 문제2 : (입력 : 파일 --> 자바 )
+        // (1) 파일의 경로 지정 : 문제1번 동일하므로 생략
+        try {
+            // (2) 입력 객체 생성 , 일반예외 발생 , try ~ catch
+            FileInputStream fin = new FileInputStream(path);
+            // (3) 가져올 바이트를 저장할 배열 선언 ( 파일 크기만 )
+            File file = new File(path); // 파일 객체 , length() : 파일의 (long) 용량 반환 함수
+            byte[] buffer = new byte[(int) file.length()];
+            // (4) 읽어온 바이트를 배열에 저장 , 일반예외 발생, try ~ catch
+            fin.read(buffer);
+            // (5) 읽어온 바이트를 문자열로 변환
+            String inStr = new String(buffer);
+            System.out.println(inStr);
+        }catch (IOException e) {
+            System.out.println("예외발생");
+        }
+
+        // 문제3 :
+        File file3 = new File(path3);
+        System.out.println(file3.exists()); // isFile , exists 둘다반환 t/ f ?
+        System.out.println(file3.getName()); // 파일 이름 반환
+        System.out.println(file3.length()); // 용량 반환
+        System.out.println(file3.getPath()); // 파일 경로 문자열 반환? .\src\day16\diary.txt
+
+        // 문제 4 :
+        // 1. 문자열 입력받기
+        System.out.print(" 이름 : ");
+        String name = scan.next();
+        // 2. 문자열 연결 : +
+        String outStr = name + "님이 방문하셨습니다. \n ";
+        // 3. 파일 경로 지정
+        String path2 ="src/visit_log.txt";
+        // 4. 지정 경로에 파일 존재여부 확인
+        File file2 = new File(path2);
+        if (file2.exists()) { // 파일 존재하면 // 입력
+            // 5. 파일 입력 객체
+            File
+        }
     }
 
-
+*/
 
 
 
