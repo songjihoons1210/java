@@ -8,16 +8,26 @@ public class UsedDto {
     private String spass;   // 비밀번호
     private int sprice; // 물품 가격
     private String stata; // 판매 중/완
+    private String sday;
 
     public UsedDto() { }
-    public UsedDto(int num, String sname, String sproduct, String scontent, String spass, int sprice, String stata) {
+    public UsedDto(int num, String sname, String sproduct, String scontent, String spass, int sprice , String sday) {
         this.num = num;
         this.sname = sname;
         this.sproduct = sproduct;
         this.scontent = scontent;
         this.spass = spass;
         this.sprice = sprice;
-        this.stata = stata;
+        this.stata = "판매중";
+        this.sday = sday;
+    }
+
+    public String getSday() {
+        return sday;
+    }
+
+    public void setSday(String sday) {
+        this.sday = sday;
     }
 
     public int getNum() {
@@ -86,6 +96,7 @@ public class UsedDto {
                 ", spass='" + spass + '\'' +
                 ", sprice=" + sprice +
                 ", stata='" + stata + '\'' +
+                ", sday='" + sday + '\'' +
                 '}';
     }
 }
