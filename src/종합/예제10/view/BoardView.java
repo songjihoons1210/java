@@ -71,7 +71,7 @@ public class BoardView {
         // 2. 결과에 따른 화면ㄱ ㅜ현,
         System.out.println("no. \t name  \t content "); // 표 상단(헤더)
         for (BoardDto dto : result) { // 향상된 for문 , for( 타입 변수명 : 리스트명  ) {  }
-            System.out.printf("%d \t %s \t %s", dto.getBno(), dto.getBwriter(), dto.getBcontent());
+            System.out.printf("%d \t %s \t %s \n", dto.getBno(), dto.getBwriter(), dto.getBcontent());
         }
     }
     // (3) 삭제 화면 구현

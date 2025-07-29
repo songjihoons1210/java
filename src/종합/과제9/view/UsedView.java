@@ -37,8 +37,11 @@ public class UsedView {
                 } else if (choice == 4) { usedDelete();
                 } else if (choice == 5) {
                 } else if (choice == 6) { usedredd();
+                    /*
                 } else if (choice == 7) { usedPrints();
                 } else if (choice == 8) { userdproduct();
+                */
+
                 } else {
                     System.out.println("[경고] 번호 입력좀 ");
                 }
@@ -135,7 +138,7 @@ public class UsedView {
                         u1.getNum(), u1.getSproduct(), u1.getSprice(), u1.getSname());
             }
         }
-
+/*
         // 순위
     public void usedPrints() {
         ArrayList<UsedDto> result = UC.usedPrints();
@@ -155,6 +158,6 @@ public class UsedView {
             System.out.printf("%s \t %d \t %s \t ", u.getSproduct() ,  u.getSprice(), u.getSname());
         }
     }
-
+*/
 
 } // class end
