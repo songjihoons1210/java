@@ -58,7 +58,7 @@ public class WaitingDao {
     } // waitingAdd and
 
     // 조회 등록
-    public static ArrayList<WaitingDto> waitingPrint() {
+    public ArrayList<WaitingDto> waitingPrint() {
         // controller 에게 요청 후 결과 받기
         ArrayList<WaitingDto> list = new ArrayList<>();
         // ArrayList를 생성하여 Dto의 여러 정보를 받아 view쪽으로 넘겨주기 위함

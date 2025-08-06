@@ -15,6 +15,7 @@ public class WaitingController {
     WaitingDao waitingDao = WaitingDao.getInstance();
 
     // (1) 등록 구현
+
     public boolean waitingAdd( String phone , String count){
         WaitingDto waitingDto = new WaitingDto( 0 , phone , count);
         boolean result = waitingDao.waitingAdd(waitingDto); // Dao에 Dto 값을 전달하여 Db 에 저장
@@ -25,9 +26,7 @@ public class WaitingController {
 
     // (2) 조회 구현
     public ArrayList<WaitingDto> waitingPrint() {
-        ArrayList<WaitingDto> result  =  new ArrayList<>();
-        // 결과 view 에게 리턴
-        return result;
+        return WaitingDao.getInstance().waitingPrint();
     } // Print end
 
     // (3) 삭제 구현
